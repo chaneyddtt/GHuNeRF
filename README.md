@@ -11,7 +11,7 @@ Chen Li, Jiahao Lin, Gim Hee Lee. GHuNeRF: Generalizable Human NeRF from a Monoc
 We aim to construct a 3D human NeRF model that can be used to render free-viewpoint images from a monocular video. 
 
 <p align="center">
-  <img width="400" height="500" src="teaser.png">
+  <img width="420" height="500" src="teaser.png">
 </p>
 
 For more details, please refer to our paper on [arXiv](https://arxiv.org/pdf/2308.16576.pdf).
@@ -43,7 +43,7 @@ python lib/datasets/light_stage/generate_depth_map.py
 
 **Test**
 
-Download [our models]() and put them under the data/trained_model/. Test for the seen identities by running the command below.
+Download [our models](https://drive.google.com/file/d/1yvrZlrSGY5fQe0YeKIcRhCeRkB0osfOz/view?usp=sharing) and put them under the data/trained_model/if_nerf/. Test for the seen identities by running the command below.
 
 ```
 CUDA_VISIBLE_DEVICES=0 python run.py --type evaluate --cfg_file configs/train_or_eval.yaml test_input_view "7," run_mode test test_mode model_o_motion_o exp_name model_MVT resume True test_sample_cam True test.epoch 400 exp_folder_name testoo time_steps 15 gpus "0," big_box True lbs lbs_new diff_view True norm_th 0.05 bw_refine True camera_embedding True pose_encode True
@@ -73,14 +73,14 @@ CUDA_VISIBLE_DEVICES=0 python train_net.py --cfg_file configs/train_or_eval_MoT.
 
 **Results**
 
-Novel view synthesis results for both seen and unseen identities on the ZJU-MoCap dataset. Please refer to the [video]() for more qualitative results. 
+Novel view synthesis results for both seen and unseen identities on the ZJU-MoCap dataset.
 <p align="center">
-  <img src="subject_313.gif" width="320" />
-  <img src="subject_386.gif" width="320" /> 
-  <img src="subject_387.gif" width="320" /> 
+  <img src="subject_313.gif" width="300" />
+  <img src="subject_386.gif" width="300" /> 
+  <img src="subject_387.gif" width="300" /> 
 </p>
 
-More results on reconstruction.
+More results on 3D reconstruction.
 <p align="center">
   <img src="output313.gif" width="320" />
   <img src="output377.gif" width="320" /> 
@@ -90,4 +90,4 @@ More results on reconstruction.
 
 **Acknowledgements**
 
-Some codes are directly adopted from [NHP](https://github.com/YoungJoongUNC/Neural_Human_Performer).
+Some codes are directly adopted from [NHP](https://github.com/YoungJoongUNC/Neural_Human_Performer). Please also cite their paper if you use the codebase.
