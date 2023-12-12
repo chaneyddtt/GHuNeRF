@@ -75,16 +75,16 @@ CUDA_VISIBLE_DEVICES=0 python train_net.py --cfg_file configs/train_or_eval_MoT.
 
 Novel view synthesis results for both seen and unseen identities on the ZJU-MoCap dataset.
 <p align="center">
-  <img src="subject_313.gif" width="300" />
-  <img src="subject_386.gif" width="300" /> 
-  <img src="subject_387.gif" width="300" /> 
+  <img src="subject_313.gif" width="250" />
+  <img src="subject_386.gif" width="250" /> 
+  <img src="subject_387.gif" width="250" /> 
 </p>
 
 More results on 3D reconstruction.
 <p align="center">
-  <img src="output313.gif" width="320" />
-  <img src="output377.gif" width="320" /> 
-  <img src="output393.gif" width="320" /> 
+  <img src="output313.gif" width="250" />
+  <img src="output377.gif" width="250" /> 
+  <img src="output393.gif" width="250" /> 
 </p>
 
 
